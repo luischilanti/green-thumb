@@ -1,0 +1,39 @@
+html
+  scroll-behavior smooth
+  font-family "Montserrat", sans-serif !important
+  background-color white
+
+body
+  margin 0
+
+section
+  padding 3.5vw 0
+  .container
+      max-width 60%
+      margin-right auto
+      margin-left auto
+      .row
+          display flex
+          flex-wrap wrap
+          flex-direction row
+          align-content center
+          justify-content center
+          align-items center
+
+
+@media screen and (min-width: 768px)
+  #mobile,
+  .mobile
+      display none !important
+
+
+@media screen and (max-width: 768px)
+    #desktop
+        display none !important
+    body
+        section
+            .container
+                max-width 85%
+    
+    iframe
+      display none

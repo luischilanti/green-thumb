@@ -1,0 +1,165 @@
+@media screen and (max-width: 768px)
+    header
+        article#mobile
+            img
+                width -webkit-fill-available
+            h1,
+            h2,
+            .svg
+                position absolute
+                color white
+                left 10%
+            h2 
+                top 5%
+                font-weight initial
+                font-size 2vw
+            h1
+                top 8%
+                font-size 13vw
+            .logo.svg
+                top 10vw
+                width 65vw
+            .arrow.svg
+                top 85vw
+                width 10vw
+
+
+    section#find-your-friend
+        .sunlight,
+        .water,
+        .chew
+            padding 5vw 0
+        .row
+            flex-direction column
+        img
+            height 20vw
+        h3
+            font-size 4vw
+        select
+                padding 2.5vw 38vw 2.5vw 2vw
+                font-size 3vw
+
+    section#no-results-yet
+        .container
+            flex-direction column
+        h3
+            font-size 12vw
+        h4
+            font-size 4vw
+            line-height 6.5vw
+            padding 4vw 0
+        .row
+            img
+                width 22vw !important
+
+
+    section#picks-for-you
+        img
+            width 35vw
+        h3
+            font-size 10vw
+        .row.boxes
+            display flex
+            flex-direction row
+            flex-wrap nowrap
+            overflow-x auto
+            align-items center
+            justify-content flex-start
+            height 130vw
+            width 100%
+            scroll-snap-type x mandatory
+            .box,
+            .box-staff
+                display none
+                height 100vw
+                margin 0
+                padding 4vw 2vw
+                border-radius 10vw
+                flex-direction column
+                align-items center
+                justify-content space-around
+                flex none
+                width 95%
+                scroll-snap-align start
+                img
+                    height 50vw
+                    width auto
+                    margin 5vw 0 0 0
+                .name-info
+                    display flex
+                    flex-direction column
+                    width 90%
+                    row-gap 2vw
+                h4
+                    font-size 8vw
+                .info
+                    display flex
+                    width 100%
+                    justify-content space-between
+                    align-items center
+                    flex-direction row !important
+                    h5
+                        font-size 7vw !important
+                        margin 0
+                    .care-info
+                        img
+                            height 5.5vw !important
+                            width auto
+                            padding 0 1.15vw !important
+                .staff-favorite
+                    height 10vw !important
+                    width 45vw !important
+                    p
+                        padding 1.2vw 0 1.2vw 2vw !important
+                        font-size 4vw !important
+        .carousel
+            -webkit-transform-style preserve-3d
+            -moz-transform-style preserve-3d
+            transform-style preserve-3d
+            width 80vw
+            margin auto
+            .carousel-button-next,
+            .carousel-button-prev
+                display block !important
+                position absolute
+                top 50%
+                width 3rem
+                height 3rem
+                background-color #FFF
+                transform translateY(-50%)
+                border-radius 50%
+                cursor pointer 
+                z-index 1001
+            .carousel-button-prev
+                left 0
+            .carousel-button-next
+                right 0
+            .carousel-button-prev::after,
+            .carousel-button-next::after
+                content " "
+                position absolute
+                width 10px
+                height 10px
+                top 50%
+                left 54%
+                border-right 2px solid black
+                border-bottom 2px solid black
+                transform translate(-50%, -50%) rotate(135deg)
+            .carousel-button-next::after
+                left 47%
+                transform translate(-50%, -50%) rotate(-45deg)
+
+
+    section#error
+        .container
+            flex-direction column
+        h3
+            font-size 12vw
+        h4
+            font-size 4vw
+            line-height 6.5vw
+            padding 4vw 0
+        .row
+            img
+                width 22vw !important
+                

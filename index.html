@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Front End Test - Greenthumb</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./source/styl/config/all.styl" />
+		<link rel="stylesheet" href="./source/styl/content/home.styl" />
+		<link rel="stylesheet" href="./source/styl/responsive/mobile.styl" />
+	</head>
+
+	<body>
+		<header>
+			<article id="desktop">
+				<img src="images/hero/desktop/left-leaves.png" />
+				<img src="images/hero/desktop/plantperson.png" />
+				<img src="images/hero/desktop/right-leaves.png" />
+
+				<img class="logo svg" src="images/icons/logo-white.svg" title="green thumb" />
+				<h1>
+					Find your<br />
+					next green<br />
+					friend
+				</h1>
+
+				<a href="#find-your-friend">
+					<img class="arrow svg" src="images/icons/arrow-down.svg" />
+				</a>
+			</article>
+
+			<article id="mobile">
+				<img src="images/hero/mobile/mobile-leaves.png" />
+				<img src="images/hero/mobile/mobile-plantperson.png" />
+
+				<img class="logo svg" src="images/icons/logo-white.svg" title="green thumb" />
+				<h1>
+					Find your<br />
+					next green<br />
+					friend
+				</h1>
+
+				<a href="#find-your-friend">
+					<img class="arrow svg" src="images/icons/arrow-down.svg" />
+				</a>
+			</article>
+		</header>
+
+		<main>
+			
+			<section id="find-your-friend">
+				<div class="container">
+					<div class="row">
+						<div class="sunlight">
+							<img src="images/illustrations/sun.png" alt="Sun" />
+							<h3>
+								<b>1.</b> Set the amount of <b>sunlight</b
+								><br />
+								your plant will get.
+							</h3>
+							<select name="sunlight" id="sunlight">
+								<option disabled selected value="0">Select...</option>
+								<option value="no">no</option>
+								<option value="low">low</option>
+								<option value="high">high</option>
+							</select>
+						</div>
+						<div class="water">
+							<img src="images/illustrations/wateringcan.png" alt="Watering can" />
+							<h3>
+								<b>2.</b> How often do you want to<br />
+								<b>water</b> your plant?
+							</h3>
+							<select name="water" id="water">
+								<option disabled selected value="0">Select...</option>
+								<option value="regularly">regularly</option>
+								<option value="daily">daily</option>
+								<option value="rarely">rarely</option>
+							</select>
+						</div>
+						<div class="chew">
+							<img src="images/illustrations/dog.png" alt="Dog" />
+							<h3>
+								<b>3.</b> Do you have pets? Do<br />
+								they <b>chew</b> plants?
+							</h3>
+							<select name="chew" id="chew">
+								<option disabled selected value="0" >Select...</option>
+								<option value="true">yes</option>
+								<option value="false">no</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="no-results-yet">
+				<div class="container">
+					<div class="text row">
+						<h3>
+							No results<br class="mobile" />
+							yet...
+						</h3>
+						<h4>
+							Use the filters above to find<br />
+							the plant that best fits your<br />
+							environment :)
+						</h4>
+					</div>
+					<div class="row">
+						<img src="images/illustrations/no-results.png" />
+					</div>
+				</div>
+			</section>
+
+			<section id="picks-for-you">
+				<div class="container">
+					<div class="row">
+						<img src="images/illustrations/pick.png" />
+						<h3>Our picks for you</h3>
+					</div>
+					<div class="carousel">
+						<div class="row boxes" id="boxes">
+
+							<div class="box-staff" id="box-staff">
+								<div class="staff-favorite">
+									<p>✨ Staff favorite</p>
+								</div>
+								<img id="image-plant-staff" />
+								<div class="name-info">
+									<h4 id="name-plant-staff"></h4>
+									<div class="info">
+										<h5 id="price-plant-staff"></h5>
+										<div class="care-info">
+											<img id="pet-staff" />
+											<img id="sun-staff" />
+											<img id="drop-staff" />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box" id="box">
+								<img id="image-plant" />
+								<div class="name-info">
+									<h4 id="name-plant"></h4>
+									<div class="info">
+										<h5 id="price-plant"></h5>
+										<div class="care-info">
+											<img id="pet" />
+											<img id="sun" />
+											<img id="drop" />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-button-next" id="btn-next"></div>
+							<div class="carousel-button-prev" id="btn-prev"></div>
+						</div>
+					</div>
+					<div class="row">
+						<button id="btn-top">
+							<svg width="18px" height="23px" viewBox="0 0 18 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>seta</title><g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="d.-results" transform="translate(-622.000000, -1901.000000)" stroke="#15573F" stroke-width="0.799999952"><g id="back-to-the-top" transform="translate(270.000000, 1888.000000)"><path d="M358.64305,33 L350.000253,24.5 L358.64305,16 M350,24.5 L372,24.5" id="seta" transform="translate(361.000000, 24.500000) rotate(90.000000) translate(-361.000000, -24.500000) "></path></g></g></g></svg>
+							<h4>back to the top</h4>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="error">
+				<div class="container">
+					<div class="text row">
+						<h3>
+							No plants<br class="mobile"/>
+							found :(
+						</h3>
+						<h4>
+							Use the filters above and<br />
+							try a new combination.
+						</h4>
+					</div>
+					<div class="row">
+						<img src="images/illustrations/no-results.png" />
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script type="text/javascript" src="./source/js/all.js"></script>
+	</body>
+</html>
